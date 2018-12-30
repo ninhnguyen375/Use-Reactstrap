@@ -1,26 +1,85 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  Button,
+  UncontrolledAlert, Alert,
+  Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, Col
+} from 'reactstrap';  
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
+      <Col lg="10" className="m-auto">
+        <div>
+          <Button color="success">I am a button</Button>
+          <Alert
+            color="danger"
+            className="mt-3"
+          >I am a simple alert</Alert>
+          <Button>Learn React</Button>
+          <UncontrolledAlert
+            color="info"
+            fade={true}
+            className="mt-3"
           >
-            Learn React
-          </a>
-        </header>
-      </div>
+            I can be disappear!
+            </UncontrolledAlert>
+          <div style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            width: 80 + "%",
+            margin: "auto"
+          }}>
+            <Card style={{ width: 300, margin: 20 + "px", textAlign: "left" }}>
+              <CardImg top width="20%" src="https://picsum.photos/318/180/?random" alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+            <Card style={{ width: 300, margin: 20 + "px", textAlign: "left" }}>
+              <CardImg top width="20%" src="https://picsum.photos/318/180/?random" alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+            <Card style={{ width: 300, margin: 20 + "px", textAlign: "left" }}>
+              <CardImg top width="20%" src="https://picsum.photos/318/180/?random" alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+            <Card style={{ width: 300, margin: 20 + "px", textAlign: "left" }}>
+              <CardImg top width="20%" src="https://picsum.photos/318/180/?random" alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+            <Card style={{ width: 300, margin: 20 + "px", textAlign: "left" }}>
+              <CardImg top width="20%" src="https://picsum.photos/318/180/?random" alt="Card image cap" />
+              <CardBody>
+                <CardTitle>Card title</CardTitle>
+                <CardSubtitle>Card subtitle</CardSubtitle>
+                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                <Button>Button</Button>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+      </Col>
     );
   }
 }
