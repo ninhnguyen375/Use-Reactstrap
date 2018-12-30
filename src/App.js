@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import HelloWorld from './components/HelloWorld'
 import {
   Button,
   UncontrolledAlert, Alert,
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Col
-} from 'reactstrap';  
+} from 'reactstrap';
 
 class App extends Component {
   render() {
     return (
       <Col lg="10" className="m-auto">
         <div>
-          <HelloWorld></HelloWorld>
           <Button color="success">I am a button</Button>
           <Alert
             color="danger"
