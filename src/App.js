@@ -24,7 +24,7 @@ class App extends Component {
             className="mt-3"
           >
             I can be disappear!
-            </UncontrolledAlert>
+          </UncontrolledAlert>
           <div style={{
             display: "flex",
             flexWrap: "wrap",
@@ -79,7 +79,7 @@ class App extends Component {
             </Card>
           </div>
         </div>
-      </Col>
+      </Col >
     );
   }
 }
