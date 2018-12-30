@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import HelloWorld from './components/HelloWorld'
 import {
   Button,
   UncontrolledAlert, Alert,
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <Col lg="10" className="m-auto">
         <div>
+          <HelloWorld></HelloWorld>
           <Button color="success">I am a button</Button>
           <Alert
             color="danger"
